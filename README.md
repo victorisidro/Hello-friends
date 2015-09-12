@@ -9,7 +9,7 @@ png(file='plot1.png')
 hist(GAP,col='red',xlab='Global_active_power',main='Global_active_power')
 ##Second plot
 x=paste(datos$Date,datos$Time)
-time=strp(x,format='%d/%m/%Y %H:%M:%S')
+time=strptime(x,format='%d/%m/%Y %H:%M:%S')
 png(file='plot2.png')
 plot(time,datos2$Global_active_power,type='l')
 
