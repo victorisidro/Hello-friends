@@ -1,6 +1,6 @@
 # Hello-friends
 ##First plot
-datos=read.table(file.choose(),headert=T,sep=';')
+datos=read.table(file.choose(),header=T,sep=';')
 datos=transform(datos,Date=as.Date(Date,format='%d/%m/%Y')
 datos=subset(datos,Date>as.Date('2007-01-31')
 datos=subset(datos,Date<as.Date('2007-02-03')
